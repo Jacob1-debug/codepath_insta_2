@@ -1,3 +1,13 @@
+"""
+The code is a Kotlin class representing a "Post" object for the Parstagram application. 
+It is using the Parse library to interact with a backend server and store/retrieve post data. 
+The class defines properties for a post such as a description, image, and user who created the post.
+It also defines getter and setter methods for these properties, as well as a companion object that contains 
+the keys for these properties as constants. Additionally, the class is annotated with @ParseClassName to specify
+that it is a ParseObject subclass.
+
+"""
+
 package com.safwan.parstagram
 
 import com.parse.ParseClassName
