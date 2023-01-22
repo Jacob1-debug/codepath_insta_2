@@ -22,3 +22,14 @@ class ExampleInstrumentedTest {
         assertEquals("com.safwan.parstagram", appContext.packageName)
     }
 }
+
+"""
+This is an Android instrumented test.
+The test runs on an Android device and uses the InstrumentationRegistry 
+class to get the context of the app under test. It then asserts that the 
+package name of the context is "com.safwan.parstagram". The @RunWith(AndroidJUnit4::class)
+annotation tells JUnit to run the test using the AndroidJUnit4 class, which provides additional 
+functionalities for running Android tests. The @Test annotation indicates that the useAppContext()
+method is a test method that should be executed by JUnit.
+
+"""
