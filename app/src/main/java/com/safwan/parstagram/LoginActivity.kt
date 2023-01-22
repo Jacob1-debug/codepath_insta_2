@@ -77,3 +77,14 @@ class LoginActivity : AppCompatActivity() {
         const val TAG = "LoginActivity"
     }
 }
+
+"""
+The previous code is for an Android app in the Java programming language. 
+The LoginActivity class is a class for a login activity in the app. It appears 
+to handle the user login and signup process by using the Parse library to interact with a 
+backend server. The onCreate method is called when the activity is created and it sets up 
+click listeners for the login and signup buttons, and also checks if a user is already logged
+in and if so, navigates the user to the main activity. The loginUser method logs the user in by 
+using the Parse library to verify the username and password, and the signUpUser method creates a 
+new user account. The goToMainActivity method is used to navigate the user to the main activity.
+"""
