@@ -23,27 +23,56 @@ import java.io.File
 @ParseClassName("Post")
 class Post : ParseObject() {
 
-
+    /**
+     * Get the description of the post
+     *
+     * @return String - Description of the post
+     */
     fun getDescription(): String? {
         return getString(KEY_DESCRIPTION)
     }
 
+    /**
+     * Set the description of the post
+     *
+     * @param descrption - Description of the post
+     */
     fun setDescription(descrption: String){
         put(KEY_DESCRIPTION,descrption)
     }
 
+    /**
+     * Set the image of the post
+     *
+     * @param parsefile - File containing the image of the post
+     */
     fun setImage(parsefile: ParseFile) {
         put(KEY_IMAGE,parsefile)
     }
 
+    /**
+     * Get the image of the post
+     *
+     * @return ParseFile - File containing the image of the post
+     */
     fun getImage(): ParseFile? {
         return getParseFile(KEY_IMAGE)
     }
 
+    /**
+     * Get the user who made the post
+     *
+     * @return ParseUser - User who made the post
+     */
     fun getUser() : ParseUser? {
         return getParseUser(KEY_USER)
     }
 
+    /**
+     * Set the user who made the post
+     *
+     * @param user - User who made the post
+     */
     fun setUser(user: ParseUser) {
         put(KEY_USER, user)
     }
@@ -55,3 +84,4 @@ class Post : ParseObject() {
     }
 
 }
+
